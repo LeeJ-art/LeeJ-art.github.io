@@ -34,16 +34,24 @@ hr {
     color: #999;
 }
 
+.AT {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
 .tm-header {
-    background-color: #272727;
+    background-color: #ebb5b5;
     color: white;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 100;
-    width: 400px;
+    z-index: 10;
+    max-width: 400px;
     overflow-y: visible;
+    transform: translateX(0);
+    transition: 0.3s;
 }
 
 .tm-header-wrapper {
@@ -58,6 +66,56 @@ hr {
 .tm-header-wrapper::-webkit-scrollbar {
     width: 0;
     height: 0;
+}
+
+.tm-main {
+    margin-left: 400px;
+    padding: 80px 100px 25px;
+}
+
+.tm-header label {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: red;
+    color: #d1d1d1;
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 80px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 0 5px hsla(240, 40%, 15%, .6);
+}
+
+#active {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+#active:checked~.container-fluid .tm-main {
+    margin: auto;
+    background-color: #272727;
+}
+
+#active:checked~.container-fluid .tm-main .tm-row {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#active:checked~.tm-header {
+    transform: translateX(-100%);
+}
+
+#active:checked~.tm-header label .fas {
+    transform: scaleX(-1);
+}
+
+#active:checked~.container-fluid .tm-main .tm-row .tm-line-bio {
+    color: white;
 }
 
 .tm-site-header {
@@ -79,11 +137,6 @@ hr {
     color: #0CC;
 }
 
-.tm-main {
-    margin-left: 400px;
-    padding: 80px 100px 25px;
-}
-
 .tm-post {
     max-width: 470px;
 }
@@ -94,12 +147,16 @@ hr {
 }
 
 .tm-nav {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .tm-nav-item {
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.tm-nav-item-more {
+    list-style: none;
 }
 
 .tm-nav-link {
@@ -159,7 +216,7 @@ ul {
     height: 50px;
     text-align: center;
     padding-top: 8px;
-    margin-right: 15px;
+    margin-right: 20px;
     margin-bottom: 15px;
 }
 
@@ -379,7 +436,7 @@ hr.tm-hr-primary {
 }
 
 hr.tm-hr-golden {
-    border-top: 5px solid #FFD700;
+    border-top: 5px solid gold;
 }
 
 hr.tm-hr-crimson {
@@ -453,6 +510,28 @@ figcaption {
     padding-top: 60px;
 }
 
+.tm-bigraphy {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.tm-introduction {
+    font-size: 20px;
+    color: #272727;
+}
+
+.tm-mb-20 {
+    display: flex;
+    margin-top: -30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tm-mb-15 {
+    margin-bottom: 10px;
+}
+
 .tm-mb-40 {
     margin-bottom: 40px;
 }
@@ -483,6 +562,10 @@ figcaption {
 
 .tm-mb-120 {
     margin-bottom: 120px;
+}
+
+.tm-mt-20 {
+    margin-top: 20px;
 }
 
 .tm-mt-40 {
@@ -532,8 +615,25 @@ a:hover figcaption {
     max-width: none;
 }
 
+.img-auto {
+    display: block;
+    margin: auto;
+    height: 240px;
+    width: 800px;
+}
+
+.img-myself {
+    height: 300px;
+    width: 200px;
+    border: 2px solid #272727;
+    border-radius: 25px;
+    display: block;
+    margin-left: 30px;
+}
+
 .tm-about-pad {
-    padding: 40px 35px;
+    height: 400px;
+    padding: 20px 25px;
 }
 
 .tm-person {
@@ -556,6 +656,24 @@ a:hover figcaption {
     line-height: 1.8;
 }
 
+.tm-line-bio {
+    line-height: 2.0;
+    color: #272727;
+    font-size: 16px;
+}
+
+.tm-line-bg {
+    line-height: 2.0;
+    color: #272727;
+    font-size: 16px;
+}
+
+.tm-line-exp {
+    line-height: 2.0;
+    color: #272727;
+    font-size: 16px;
+}
+
 .gmap_canvas {
     overflow: hidden;
     background: none!important;
@@ -568,7 +686,7 @@ a:hover figcaption {
     display: inline-block;
 }
 
-.tm-social-links li a {
+conta .tm-social-links li a {
     display: block;
     color: white;
     background-color: #0CC;
@@ -618,9 +736,13 @@ a:hover figcaption {
     display: flex;
 }
 
+.media {
+    max-width: 800px;
+}
+
 @media (max-width: 1540px) {
     .tm-header {
-        width: 320px;
+        width: 640px;
     }
     .tm-main {
         margin-left: 320px;
@@ -632,7 +754,7 @@ a:hover figcaption {
     .tm-about-col {
         flex: 0 0 100%;
         max-width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 }
 
@@ -698,7 +820,7 @@ a:hover figcaption {
         margin-right: auto;
     }
     .tm-person-col {
-        width: 50%;
+        width: 100%;
     }
     .tm-person {
         flex-direction: row;
@@ -808,6 +930,6 @@ a:hover figcaption {
 
 @media (max-width: 380px) {
     .tm-person img {
-        max-width: 120px;
+        max-width: 300px;
     }
 }

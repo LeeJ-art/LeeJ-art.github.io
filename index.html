@@ -11,20 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="tm-header" id="tm-header">
+    <input type="checkbox" id="active" title="123">
+    <div class="tm-header">
         <div class="tm-header-wrapper">
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="tm-site-header">
                 <div class="mb-2 mx-auto tm-site-logo"><img src="img/header.PNG" class="rounded-circle" width="140" height="140"></div>
-                <h1 class="text-center">LeeJ JIAN</h1>
+                <h1 class="text-center">LeeJ</h1>
+                <h6 class="text-center">Email:&nbsp jcuyo613 <span class="AT">AT</span> gmail <span class="AT">DOT</span> com</h6>
             </div>
-            <p class="tm-mb-65 text-white">
-                I'm LI-JIE JIAN or you can call me LeeJ, Dolphin.
+            <p class="tm-bigraphy">
+                I am LI-JIE JIAN and also called LeeJ, Dolphin&#128044;.<br><br> My research focuses on system security, cryptography, and cybersecurity.
             </p>
             <nav class="tm-nav" id="tm-nav">
                 <ul>
@@ -34,26 +37,28 @@
                         </a>
                     </li>
                     <li class="tm-nav-item">
-                        <a href="#" class="tm-nav-link">
+                        <a href="life.html" class="tm-nav-link">
                             <i class="fas fa-camera"></i> Life Post
                         </a>
                     </li>
                     <li class="tm-nav-item">
-                        <a href="#" class="tm-nav-link">
+                        <a href="programming.html" class="tm-nav-link">
                             <i class="fas fa-desktop"></i> Programming
                         </a>
                     </li>
                     <li class="tm-nav-item">
-                        <a href="#" class="tm-nav-link">
-                            <i class="fas fa-flag"></i> CTF Write-up
+                        <a href="ctf.html" class="tm-nav-link">
+                            <i class="fas fa-flag"></i> CTF Writeup
+                        </a>
+                    </li>
+                    <li class="tm-nav-item-more">
+                        <a class="tm-nav-link">
+                            <i class="fas fa-users"></i> More About
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="tm-mb-65">
-                <a class="tm-link">
-                    <i class="fas fa-users"></i>&nbsp; More About Me
-                </a>
+            <div class="tm-mb-20">
                 <a href="https://github.com/LeeJ-art" class="tm-social-link">
                     <i class="fab fa-github tm-social-icon"></i>
                 </a>
@@ -68,72 +73,92 @@
                 </a>
             </div>
         </div>
-    </header>
+        <label for="active">
+            <i class="fas fa-angle-left"></i>
+        </label>
+    </div>
 
     <div class="container-fluid">
         <main class="tm-main">
             <div class="row tm-row">
                 <div class="col-12">
-                    <img src="img/TOP.PNG" width="800" height="300">
+                    <img class="img-auto" src="img/TOP.PNG">
                 </div>
             </div>
-            <div class="row tm-row tm-mb-45">
+            <div class="row tm-row">
                 <div class="col-12">
                     <hr class="tm-hr-golden tm-mb-55">
-                    <img src="" alt="Image" class="img-fluid">
                 </div>
             </div>
-            <div class="row tm-row tm-mb-40">
-                <div class="col-12">
-                    <div class="mb-4">
-                        <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">About me</h2>
-                        <p>
-                            Hi! I'm LeeJ.
-                        </p>
-                        <p>
-
-                        </p>
+            <div class="row tm-row">
+                <div class="col-lg tm-mb-40 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="img/myself.jpg" alt="Image" class="img-myself mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">LI-JIE JIAN</h2>
+                            <h3 class="tm-h3 mb-3"></h3>
+                            <p class="tm-line-bio">
+                                I am a EE&CS undergraduate student in National Central University <a href="https://adl.tw/">ADL</a> where I am advised by <a href="https://staff.csie.ncu.edu.tw/hsufh/">Fu-Hau Hsu</a>. <br><br> From 2020, I startup FalCo
+                                Multimedia Company with my friends.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row tm-row tm-mb-120">
-                <div class="col-lg-4 tm-about-col">
+                <div class="col-lg-6 tm-about-col tm-mb-40">
                     <div class="tm-bg-gray tm-about-pad">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fas fa-bezier-curve fa-4x tm-color-primary"></i>
+                        <div class="text-center tm-mt-20 tm-mb-15">
+                            <i class="fas fa-id-card-alt fa-3x tm-color-primary"></i>
                         </div>
                         <h2 class="mb-3 tm-color-primary tm-post-title">Background</h2>
-                        <p class="mb-0 tm-line-height-short">
-                            National Central University
+                        <p class="mb-0 tm-line-bg">
+                            EE&CS <b>B.S.</b> at National Central University
+                        </p>
+                        <p class="mb-0 tm-line-bg">
+                            <!--Wait-->
+                        </p>
+                        <p class="mb-0 tm-line-bg">
+                            <!--Work hard-->
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 tm-about-col">
+                <div class="col-lg-6 tm-about-col tm-mb-40">
                     <div class="tm-bg-gray tm-about-pad">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fas fa-users-cog fa-4x tm-color-primary"></i>
+                        <div class="text-center tm-mt-20 tm-mb-15">
+                            <i class="fas fa-user-cog fa-3x tm-color-primary"></i>
                         </div>
-                        <h2 class="mb-3 tm-color-primary tm-post-title">Experience</h2>
-                        <p class="mb-0 tm-line-height-short">
-                            FalCo
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Work Experience</h2>
+                        <p class="mb-0 tm-line-exp">
+                            <b>R.A.,</b> Academia Sinica, Institute of Information Science (2020-)
+                        </p>
+                        <p class="mb-0 tm-line-exp">
+                            <b>Co-founder,</b> FalCo Multimedia Company (2020-)
+                        </p>
+                        <p class="mb-0 tm-line-exp">
+                            <b>Employee,</b> NCU Computer Center (2020-2022)
+                        </p>
+                        <p class="mb-0 tm-line-exp">
+                            <b>T.A.,</b> NCU Quantum Computation (2020-2023)
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 tm-about-col">
+                <div class="col-lg-12 tm-about-col">
                     <div class="tm-bg-gray tm-about-pad">
                         <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fab fa-creative-commons-sampling fa-4x tm-color-primary"></i>
+                            <i class="fa fa-file fa-4x tm-color-primary"></i>
                         </div>
                         <h2 class="mb-3 tm-color-primary tm-post-title">Publications</h2>
-                        <p class="mb-0 tm-line-height-short">
+                        <p class="mb-0 tm-line-pub">
                             ...
                         </p>
                     </div>
                 </div>
             </div>
-            <footer class="row tm-row">
+            <footer class="row tm-row tm-mb-45">
                 <div class="col-md-6 col-12 tm-color-gray">
-                    Design: <a rel="nofollow" target="_parent" class="tm-external-link">LeeJ-art</a>
+                    Design:
+                    <a rel="nofollow" target="_parent" class="tm-external-link">LeeJ-art</a>
                 </div>
             </footer>
         </main>
@@ -141,6 +166,9 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/templatemo-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script>
+    </script>
 </body>
 
 </html>
