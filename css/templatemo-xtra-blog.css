@@ -47,10 +47,10 @@ hr {
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 10;
+    z-index: 100;
     max-width: 400px;
     overflow-y: visible;
-    transform: translateX(0);
+    /*transform: translateX(0);*/
     transition: 0.3s;
 }
 
@@ -795,16 +795,21 @@ conta .tm-social-links li a {
     .tm-header-wrapper {
         padding: 15px;
     }
+    .tm-header label {
+        display: none;
+    }
     .navbar-toggler {
         display: block;
         position: fixed;
         left: 0;
         top: 0;
-        background-color: rgba(56, 204, 204, 0.75);
-        color: white;
+        font-size: 30px;
+        background-color: red;
+        color: #d1d1d1;
         padding: 10px 15px;
         transition: all 0.3s ease;
-        border-radius: 0;
+        border-radius: 0 5px 5px 0;
+        box-shadow: 5px 0 5px hsla(240, 40%, 15%, .6);
         top: 5px;
     }
     .tm-header.show .navbar-toggler {
@@ -814,6 +819,10 @@ conta .tm-social-links li a {
         margin-left: 0;
         padding: 50px 40px;
         width: 100%;
+        background-color: #272727;
+    }
+    .tm-line-bio {
+        color: white;
     }
     .tm-post-sidebar {
         margin-left: 0;
@@ -919,17 +928,19 @@ conta .tm-social-links li a {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 507px) {
     .tm-person-col {
         width: 100%;
     }
     .tm-person {
         flex-direction: row;
+        display: inline-block;
+        max-width: 500px;
     }
 }
 
 @media (max-width: 380px) {
-    .tm-person img {
+    .tm-person {
         max-width: 300px;
     }
 }

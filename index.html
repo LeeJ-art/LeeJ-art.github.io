@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/icon.PNG">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="apple-touch-icon" href="img/icon.PNG">
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
@@ -15,10 +16,10 @@
 
 <body>
     <input type="checkbox" id="active" title="123">
-    <div class="tm-header">
+    <header class="tm-header" id="tm-header">
         <div class="tm-header-wrapper">
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-angle-right" id="arrow"></i>
             </button>
             <div class="tm-site-header">
                 <div class="mb-2 mx-auto tm-site-logo"><img src="img/header.PNG" class="rounded-circle" width="140" height="140"></div>
@@ -75,36 +76,35 @@
         <label for="active">
             <i class="fas fa-angle-left"></i>
         </label>
-    </div>
+    </header>
 
     <div class="container-fluid">
         <main class="tm-main">
-            <div class="row tm-row">
+            <div class="row tm-row tm-mb-60">
                 <div class="col-12">
                     <img class="img-auto" src="img/TOP.PNG">
                 </div>
             </div>
-            <div class="row tm-row">
+            <div class="row tm-row tm-mb-40">
                 <div class="col-12">
                     <hr class="tm-hr-golden tm-mb-55">
                 </div>
-            </div>
-            <div class="row tm-row">
-                <div class="col-lg tm-mb-40 tm-person-col">
+
+                <div class="col-lg-6 tm-mb-30 tm-person-col">
                     <div class="media tm-person">
                         <img src="img/myself.jpg" alt="Image" class="img-myself mr-4">
                         <div class="media-body">
                             <h2 class="tm-color-primary tm-post-title mb-2">LI-JIE JIAN</h2>
-                            <h3 class="tm-h3 mb-3"></h3>
                             <p class="tm-line-bio">
-                                I am a EE&CS undergraduate student in National Central University <a href="https://adl.tw/">ADL</a> where I am advised by <a href="https://staff.csie.ncu.edu.tw/hsufh/">Fu-Hau Hsu</a>. <br><br> From 2020, I startup FalCo
+                                I am an EE&CS undergraduate student in National Central University <a href="https://adl.tw/">ADL</a> where I am advised by <a href="https://staff.csie.ncu.edu.tw/hsufh/">Fu-Hau Hsu</a>. <br><br> From 2020, I startup FalCo
                                 Multimedia Company with my friends.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row tm-row tm-mb-120">
+
+            <div class="row tm-row tm-mb-60">
                 <div class="col-lg-6 tm-about-col tm-mb-40">
                     <div class="tm-bg-gray tm-about-pad">
                         <div class="text-center tm-mt-20 tm-mb-15">
@@ -129,7 +129,7 @@
                         </div>
                         <h2 class="mb-3 tm-color-primary tm-post-title">Work Experience</h2>
                         <p class="mb-0 tm-line-exp">
-                            <b>R.A.,</b> Academia Sinica, Institute of Information Science (2020-)
+                            <b>RA,</b> Academia Sinica, Institute of Information Science (2020-)
                         </p>
                         <p class="mb-0 tm-line-exp">
                             <b>Co-founder,</b> FalCo Multimedia Company (2020-)
@@ -138,18 +138,18 @@
                             <b>Employee,</b> NCU Computer Center (2020-2022)
                         </p>
                         <p class="mb-0 tm-line-exp">
-                            <b>T.A.,</b> NCU Quantum Computation (2020-2023)
+                            <b>TA,</b> NCU Quantum Computation (2020-2023)
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-12 tm-about-col">
+                <div class="col-lg-6 tm-about-col">
                     <div class="tm-bg-gray tm-about-pad">
                         <div class="text-center tm-mt-40 tm-mb-60">
                             <i class="fa fa-file fa-4x tm-color-primary"></i>
                         </div>
                         <h2 class="mb-3 tm-color-primary tm-post-title">Publications</h2>
                         <p class="mb-0 tm-line-pub">
-                            ...
+                            Coming soon
                         </p>
                     </div>
                 </div>
