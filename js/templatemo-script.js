@@ -24,4 +24,9 @@ $(function() {
     $("#tm-nav .nav-link").click(function(e) {
         $(".tm-header").removeClass("show");
     });
+
+    if ($('li').hasClass("active")) {
+        var scroller = document.querySelector("#wraped");
+        scroller.scrollTop = $("li.active").position().top;
+    }
 });

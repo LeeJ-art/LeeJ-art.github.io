@@ -8,18 +8,18 @@
     <link rel="shortcut icon" href="img/icon.PNG">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="apple-touch-icon" href="img/icon.PNG">
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
 <body>
     <input type="checkbox" id="active" title="123">
-    <div class="tm-header">
-        <div class="tm-header-wrapper">
+    <header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper" id="wraped">
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-angle-right" id="arrow"></i>
             </button>
             <div class="tm-site-header">
                 <div class="mb-2 mx-auto tm-site-logo"><img src="img/header.PNG" class="rounded-circle" width="140" height="140"></div>
@@ -46,7 +46,7 @@
                             <i class="fas fa-desktop"></i> Programming
                         </a>
                     </li>
-                    <li class="tm-nav-item  active">
+                    <li class="tm-nav-item active">
                         <a href="ctf.html" class="tm-nav-link">
                             <i class="fas fa-flag"></i> CTF Writeup
                         </a>
@@ -76,14 +76,12 @@
         <label for="active">
             <i class="fas fa-angle-left"></i>
         </label>
-    </div>
+    </header>
+
 
 
     <script src="js/jquery.min.js"></script>
     <script src="js/templatemo-script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script>
-    </script>
 </body>
 
 </html>
