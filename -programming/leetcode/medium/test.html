@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="../../../img/icon.PNG">
     <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atelier-dune.dark.css">
     <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../../css/templatemo-xtra-blog.css">
 </head>
@@ -115,33 +115,33 @@
                             </p>
                             <hr class="tm-hr-primary tm-mb-55">
                             <pre>
-                            <code>
-class Solution {
-public:
-    int compress(vector<char>& chars) {
-        int res = 0, count = 1;
-        chars.push_back('\0');
+                            <code class="language-cpp hljs">
+    class Solution {
+    public:
+        int compress(vector<char>& chars) {
+            int res = 0, count = 1;
+            chars.push_back('\0');
 
-        char cur = chars[0];
-        for (int i=1; i<chars.size(); i++){
-            if (cur == chars[i]){
-                count++;
-            }else{
-                chars[res++] = cur;
-                cur = chars[i];
+            char cur = chars[0];
+            for (int i=1; i<chars.size(); i++){
+                if (cur == chars[i]){
+                    count++;
+                }else{
+                    chars[res++] = cur;
+                    cur = chars[i];
 
-                if (count > 1){
-                    for (auto c: to_string(count)){
-                        chars[res++] = c;
+                    if (count > 1){
+                        for (auto c: to_string(count)){
+                            chars[res++] = c;
+                        }
                     }
+                    count = 1;
                 }
-                count = 1;
             }
+            
+            return res;
         }
-        
-        return res;
-    }
-};
+    };
                             </code>
                             </pre>
                             <span class="d-block text-right tm-color-primary">Code . LeetCode . String</span>
@@ -192,6 +192,9 @@ public:
     <script src="js/jquery.min.js"></script>
     <script src="js/templatemo-script.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 
 </html>
