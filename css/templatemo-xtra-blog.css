@@ -118,6 +118,14 @@ hr {
     color: white;
 }
 
+#active:checked~.container-fluid .tm-main .tm-row .tm-line-article {
+    color: white;
+}
+
+#active:checked~.container-fluid .tm-main .tm-row .tm-color-primary {
+    color: rgb(4, 242, 242);
+}
+
 .tm-site-header {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -332,7 +340,7 @@ ul {
 .tm-new-badge {
     top: 25px;
     right: -10px;
-    background-color: #0CC;
+    background-color: #F00078;
     color: white;
     padding: 5px 20px;
 }
@@ -665,6 +673,10 @@ a:hover figcaption {
     line-height: 2.0;
     color: #272727;
     font-size: 16px;
+}
+
+.tm-line-article {
+    color: #272727;
 }
 
 .tm-line-bg {
