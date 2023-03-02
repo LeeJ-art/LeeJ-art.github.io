@@ -10,7 +10,6 @@
     <link rel="apple-touch-icon" href="/img/icon.PNG">
     <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/templatemo-xtra-blog.css">
 </head>
@@ -87,91 +86,6 @@
                 </div>
             </div>
 
-            <div class="row tm-row">
-                <div class="col-lg-8 tm-post-col">
-                    <div class="tm-post-full">
-                        <div class="mb-4">
-                            <h2 class="pt-2 tm-color-primary tm-post-title">443. String Compression</h2>
-                            <p class="tm-line-article tm-mb-40">March 2, 2023</p>
-                            <p class="tm-line-article">
-                                <b>Question:</b> <br> Given an array of characters <b>chars</b>, compress it using the following setting:
-                                <ol class="tm-line-article">
-                                    <li>Check origin array size, <b>chars</b>, after compression</li>
-                                    <li>If the group's length is 1, we append the character to s</li>
-                                    <li>Others, we append the character followed by the group's length.</li>
-                                </ol>
-                            </p>
-                            <p class="tm-line-article">
-                                <b>Constraints:</b>
-                                <ul class="tm-line-article">
-                                    <li>In <b>chars</b>, every elements are consecutive repeating and become a group.</li>
-                                    <li>1 &le; Length of <b>chars</b> &le; 2000</li>
-                                    <li><b>chars</b> are composed by English letters, digits, or symbols.</li>
-                                    <li>Only allow constant extra space</li>
-                                </ul>
-                            </p>
-                            <p class="tm-line-article">
-                                <b>Explaination and Code:</b>
-                            </p>
-                            <hr class="tm-hr-primary tm-mb-55">
-                            <pre>
-                            <code>
-        class Solution {
-        public:
-            int compress(vector<char>& chars) {
-                int res = 0, count = 1;
-                chars.push_back('\0');
-
-                char cur = chars[0];
-                for (int i=1; i<chars.size(); i++){
-                    if (cur == chars[i]){
-                        count++;
-                    }else{
-                        chars[res++] = cur;
-                        cur = chars[i];
-
-                        if (count > 1){
-                            for (auto c: to_string(count)){
-                                chars[res++] = c;
-                            }
-                        }
-                        count = 1;
-                    }
-                }
-                
-                return res;
-            }
-        };
-                            </code>
-                            </pre>
-                            <span class="d-block text-right tm-color-primary">Code . LeetCode . String</span>
-                        </div>
-                    </div>
-                </div>
-
-                <aside class="col-lg-4 tm-aside-col">
-                    <div class="tm-post-sidebar">
-                        <hr class="mb-3 tm-hr-primary">
-                        <h2 class="mb-4 tm-post-title tm-color-primary">Categories</h2>
-                        <ul class="tm-mb-75 pl-5 tm-category-list">
-                            <li><a href="#" class="tm-color-primary">Algorithm</a></li>
-                            <li><a href="#" class="tm-color-primary">String</a></li>
-                            <li><a href="#" class="tm-color-primary">Sort</a></li>
-                            <li><a href="#" class="tm-color-primary">Divid and Conquer</a></li>
-                            <li><a href="#" class="tm-color-primary">DP</a></li>
-                            <li><a href="#" class="tm-color-primary">Graph</a></li>
-                            <li><a href="#" class="tm-color-primary">Hash</a></li>
-                        </ul>
-                        <hr class="mb-3 tm-hr-primary">
-                        <h2 class="tm-mb-40 tm-post-title tm-color-primary">Related Posts</h2>
-                        <a href="#" class="d-block tm-mb-40">
-                            <figure>
-                                <figcaption class="tm-color-primary">Coming soon</figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                </aside>
-            </div>
 
             <footer class="row tm-row tm-mb-45">
                 <div class="col-md-6 col-12 tm-color-gray">
@@ -186,7 +100,6 @@
         </main>
     </div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/templatemo-script.js"></script>
 </body>
