@@ -233,7 +233,7 @@ ul {
 }
 
 .tm-social-icon {
-    color: #F0F0F0;
+    color: #080808;
     transition: all 0.3s ease;
 }
 
@@ -1034,3 +1034,13 @@ conta .tm-social-links li a {
         vertical-align: middle;
     }
 }
+
+body {
+    margin: 1em auto;
+    margin-bottom: 15px;
+    max-width: 45.5em;
+    font: 300 16px/1.5 Roboto Light, sans-serif;
+    color: #454545;
+    font-size: 15px;
+    padding: 10px;
+  }
