@@ -255,6 +255,11 @@ ul {
 
 .tm-social-link:hover .tm-social-icon.fa-linkedin {
     color: #06a7f1;
+    
+}
+
+.tm-social-link:hover .tm-social-icon.fa-user-circle {
+    color: #03ff31dc;
 }
 
 .navbar-toggler {
@@ -614,9 +619,14 @@ button:focus {
     outline: none;
 }
 
+p.looking:hover {
+    text-decoration: none;
+    color: #ff0000;
+}
+
 a:hover {
     text-decoration: none;
-    color: #048c8c;
+    color: #00c8ff;
 }
 
 a:hover figcaption {
